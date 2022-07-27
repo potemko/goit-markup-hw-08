@@ -1,0 +1,109 @@
+.page-header {
+    display: block;
+    border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+   
+    &__item--heder-current {
+                    position: relative;
+                }
+    &__item--heder-current::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0%;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #2196f3;
+            border-radius: 2px;
+        }
+        
+}
+
+
+
+.header-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.header-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav .header-nav__item:not(:last-child) {
+    margin-right: 50px;
+    padding-inline-start: 0;
+}
+
+.header-nav__list-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    list-style: none;
+}
+
+.icon-mail {
+    fill: currentColor;
+}
+
+.icon-phone {
+    fill: currentColor;
+}
+
+.icon-mail,
+.icon-phone {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.header-contact:focus,
+.header-contact:hover {
+    color: #2196f3;
+}
+
+  .header-nav__list {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin-left: 93px;
+ }
+
+ .header-nav__item--current {
+     color: var(--accent-color);
+ }
+
+

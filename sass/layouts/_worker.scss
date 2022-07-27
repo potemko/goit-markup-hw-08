@@ -1,0 +1,91 @@
+.worker {
+    padding-top: 94px;
+    background-color: #f5f4fa;
+
+    &__name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: calc(19 / 16);
+    
+            letter-spacing: 0.03em;
+    
+            color: #212121;
+        }
+    &__team {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--title-text-color);
+            padding-bottom: 50px;
+        }
+    &__liest {
+            list-style: none;
+            flex-basis: calc(100%);
+            display: flex;
+            text-align: center;
+            display: flex;
+                }
+        
+    &__list {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: var(--title-text-color);
+                }
+        
+    &__foto:not(:first-child) {
+            margin-left: 30px;
+                }
+        
+    &__card {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background: #ffffff;
+                }
+        
+    &__desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            color: var(--grey-text-color);
+            padding-top: 10px;
+                }
+}
+
+.worker__social-icons {
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.worker__link-icons:not(:last-child) {
+    padding-right: 10px;
+}
+
+.worker__social-linc {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.worker__social-linc:hover,
+.worker__social-linc:focus {
+    fill: #ffffff;
+    background-color: #2196f3;
+}

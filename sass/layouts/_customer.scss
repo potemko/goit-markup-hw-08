@@ -1,0 +1,45 @@
+.customer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: #212121;
+        }
+&__grup-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+                }
+        
+&__liest-logo-clients {
+    width: 170px;
+    height: 92px;
+    outline: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+    &__liest-logo-clients:hover,
+    &__liest-logo-clients:focus {
+    fill: #2196f3;
+    outline: 1px solid #2196f3;
+                }
+        
+    &__liest-logo:not(:last-child) {
+    margin-right: 30px;
+                }
+}
