@@ -6,6 +6,7 @@
   --grey-text-color: #757575;
   --indent: 3;
   --items: 60px;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -79,13 +80,30 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1012,13 +1030,77 @@ label {
 }
 
 .studio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+.studio__main-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .studio__main-item {
+    width: calc((100% - var(--card-set-gap)) / 2);
+  }
+}
+
+.info-logo-liest {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .studio__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .studio__list-item .info-logo-liest {
+    width: 354px;
+  }
+}
+.studio__text {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .studio__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .studio__main-item {
+    -ms-flex-preferred-size: 4;
+        flex-basis: 4;
+    font-size: 33px;
+  }
+  .studio__text {
+    max-width: 354px;
+  }
+  .studio__main-item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
 .studio__subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -1027,24 +1109,9 @@ label {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
-}
-
-.studio__main-item {
-  width: 270px;
-}
-
-.studio__main-item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.studio__list-item {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .studio__text {
@@ -1058,7 +1125,6 @@ label {
 .info-logo-liest {
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 270px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,6 +1145,10 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.studio__main-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .work-foto__list-benefits {

@@ -1,7 +1,68 @@
 .studio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     justify-content: center;
+
+    
+}
+.studio__main-item{
+    display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        
+
+        @media screen and (min-width: 768px){
+            width: calc((100% - var(--card-set-gap)) / 2);
+        }
+}
+
+.info-logo-liest {
+    width: 450px; 
+margin-left: auto;
+margin-right: auto;}
+    
+
+
+@media screen and (min-width: 768px) {
+    .studio__list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    .info-logo-liest{
+        width: 354px;
+    }
+    }
+
+    
+        
+    }
+
+    .studio__text{ 
+        max-width: 100%;
+    }
+
+        @media screen and (min-width: 1200px) {
+            .studio__list-item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .studio__main-item {
+                flex-basis: 4;
+                font-size: 33px;
+                
+            }
+    
+            .studio__text {
+                max-width: 354px;
+            }
+            .studio__main-item:not(:first-child) {
+                margin-left: 30px;
+            }
 }
 
 .studio__subtitle {
@@ -12,32 +73,35 @@
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
-.studio__main-item {
-    width: 270px;
-}
+// .studio__main-item {
+//     width: 270px;
+// }
 
-.studio__main-item:not(:first-child) {
-    margin-left: 30px;
-}
 
-.studio__list-item {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
+
+
+    
+
 .studio__text {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    
 }
+
 .info-logo-liest {
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 270px;
+    
     height: 120px;
     display: flex;
     justify-content: center;
@@ -48,4 +112,8 @@
 .info-logo-liest__svg {
     justify-content: center;
     align-items: center;
+}
+
+.studio__main-item:not(:last-child){
+    margin-bottom: 30px;
 }
