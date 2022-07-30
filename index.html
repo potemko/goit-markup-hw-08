@@ -31,6 +31,12 @@
           <a lang="en" class="companu-logo link" href="./index.html"
             >Web<span class="companu-logo__span">Studio </span>
           </a>
+          <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-burger" href="./symbol-defs.svg#icon-menu_burger"></use>
+              <use class="mobile-menu-close" href="./symbol-defs.svg#icon-close_burger"></use>
+            </svg>
+          </button>
           <!-- список навігації-->
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -49,7 +55,7 @@
           </ul>
           <!--контактні данні-->
           <ul class="header-nav__list-contact">
-            <li class="header-nav__item">
+            <li class="header-nav__item-info .header-nav__item-email">
               <a class="header-contact link" href="malito:info@devstudio.com">
                 <svg class="icon-mail" width="16" height="12">
                   <use href="./symbol-defs.svg#icon-mail"></use>
@@ -58,7 +64,7 @@
               </a>
             </li>
 
-            <li class="header-nav__item">
+            <li class="header-nav__item-info header-nav__item-phone">
               <a class="header-contact link" href="tel:+380961111111">
                 <svg class="icon-phone" width="10" height="16">
                   <use href="./symbol-defs.svg#icon-smartphone"></use></svg
@@ -86,8 +92,8 @@
       <!--характеристика компанії-->
       <section class="studio">
         <div class="container">
-          <ul class="studio__list-item">
-            <li class="studio__main-item">
+          <ul class="studio__list-item card-set studio-item">
+            <li class="studio__main-item card-set__item">
               <div class="info-logo-liest">
                 <svg class="info-logo-liest__svg" width="65" height="70">
                   <use href="./symbol-defs.svg#icon-antenna"></use>
@@ -98,7 +104,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="studio__main-item">
+            <li class="studio__main-item card-set__item">
               <div class="info-logo-liest">
                 <svg class="info-logo-liest__svg" width="67" height="70">
                   <use href="./symbol-defs.svg#icon-clock"></use>
@@ -109,7 +115,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="studio__main-item">
+            <li class="studio__main-item card-set__item">
               <div class="info-logo-liest">
                 <svg class="info-logo-liest__svg" width="70" height="54">
                   <use href="./symbol-defs.svg#icon-diagram"></use>
@@ -120,7 +126,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="studio__main-item">
+            <li class="studio__main-item card-set__item">
               <div class="info-logo-liest">
                 <svg class="info-logo-liest__svg" width="55" height="61">
                   <use href="./symbol-defs.svg#icon-astronaut"></use>
@@ -180,8 +186,8 @@
         <div class="container">
           <h2 class="worker__team">Наша команда</h2>
           <ul class="worker__liest">
-            <li class="worker__list worker__foto">
-              <img src="./images/foto1.jpg" alt="фото Ігорь Демяненко" width="270" />
+            <li class="worker__list worker__foto worker-card">
+              <img src="./images/foto1.jpg" alt="фото Ігорь Демяненко" width="450" />
               <div class="worker__card">
                 <h3 class="worker__name">Игорь Демьяненко</h3>
                 <p class="worker__desc">Product Designer</p>
@@ -241,8 +247,8 @@
                 </ul>
               </div>
             </li>
-            <li class="worker__list worker__foto">
-              <img src="./images/foto2.jpg" alt="фото Ольга Репина" width="270" />
+            <li class="worker__list worker__foto worker-card">
+              <img src="./images/foto2.jpg" alt="фото Ольга Репина" width="450" />
               <div class="worker__card">
                 <h3 class="worker__name">Ольга Репина</h3>
                 <p class="worker__desc">Frontend Developer</p>
@@ -302,8 +308,8 @@
                 </ul>
               </div>
             </li>
-            <li class="worker__list worker__foto">
-              <img src="./images/foto3.jpg" alt="фото Николай Тарасов" width="270" />
+            <li class="worker__list worker__foto worker-card">
+              <img src="./images/foto3.jpg" alt="фото Николай Тарасов" width="450" />
               <div class="worker__card">
                 <h3 class="worker__name">Николай Тарасов</h3>
                 <p class="worker__desc">Marketing</p>
@@ -363,8 +369,8 @@
                 </ul>
               </div>
             </li>
-            <li class="worker__list worker__foto">
-              <img src="./images/foto4.jpg" alt="фото Михаил Ермаков" width="270" />
+            <li class="worker__list worker__foto worker-card">
+              <img src="./images/foto4.jpg" alt="фото Михаил Ермаков" width="450" />
               <div class="worker__card">
                 <h3 class="worker__name">Михаил Ермаков</h3>
                 <p class="worker__desc">UI Designer</p>
@@ -695,6 +701,42 @@
         </form>
       </div>
     </div>
+    <div class="mobil-menu" data-menu>
+      <ul class="mobil-menu__nav list-style">
+        <li class="mobil-menu__nav-item link">
+          <a class="link header-nav__item--current" href="./index.html">Студия</a>
+        </li>
+        <li class="mobil-menu__nav-item link">
+          <a class="link mobil-menu-style" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobil-menu__nav-item link">
+          <a class="link mobil-menu-style" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobil-menu__contact list-style">
+        <li class="mobil-menu__contact-item">
+          <a class="link header-nav__item--current mobil-menu__number" href="">+38 096 111 11 11</a>
+        </li>
+        <li class="mobil-menu__contact-item">
+          <a class="link mobil-menu-style mobil-menu__mail" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobil-menu__socials list-style">
+        <li class="mobil-menu__socials-item">
+          <a class="link header-nav__item--current" href="">Instagram</a>
+        </li>
+        <li class="mobil-menu__socials-item">
+          <a class="link header-nav__item--current" href="">Instagram</a>
+        </li>
+        <li class="mobil-menu__socials-item">
+          <a class="link header-nav__item--current" href="">Facebook</a>
+        </li>
+        <li class="mobil-menu__socials-item">
+          <a class="link header-nav__item--current" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

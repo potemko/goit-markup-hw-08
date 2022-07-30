@@ -23,6 +23,12 @@
 }
 .work-foto {
     padding-bottom: 94px;
+
+    
+
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
 }
 
 .benefits-overlay {

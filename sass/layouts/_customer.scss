@@ -1,6 +1,16 @@
 .customer {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
 &__title {
     font-family: 'Roboto';
@@ -15,12 +25,30 @@
         }
 &__grup-logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
+    margin: -15px;
+    
+                }
+ &__liest-logo {
+    margin: 15px;
+    width: 210px;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        margin: 15px;
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+        width: 170px;
+        }
                 }
         
 &__liest-logo-clients {
-    width: 170px;
+    
     height: 92px;
     outline: 1px solid #afb1b8;
     border-radius: 4px;
@@ -39,7 +67,4 @@
     outline: 1px solid #2196f3;
                 }
         
-    &__liest-logo:not(:last-child) {
-    margin-right: 30px;
-                }
-}
+            }

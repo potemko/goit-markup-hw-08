@@ -17,15 +17,22 @@
 .card-portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;}
+    margin: -15px;}
 
-.card-portfolio__list>.card-portfolio__item {
-     
-    
-    margin-left: 30px;
-    margin-top: 30px;
-    max-width: 100%;}
+.card-portfolio__item {
+     margin: 15px;
+    widows: 450px;
+@media screen and (min-width: 768px) {
+        margin: 15px;
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 15px;
+            width: 370px;
+    }
+}
+
 
 
 .card-portfolio__item:focus,
@@ -60,6 +67,19 @@
     padding-right: 24px;
 }
 
+.card-portfolio__logo-work{
+    @media screen and (min-width: 768px) {
+            
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            
+            width: 370px;
+        }
+
+}
+
 .card-portfolio__overlay {
     position: absolute;
     bottom: 0%;
@@ -79,6 +99,16 @@
 .card-portfolio__picture {
     position: relative;
     overflow: hidden;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+    
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+    
+            width: 370px;
+        }
 }
 
 .card-portfolio__picture:hover .card-portfolio__overlay {

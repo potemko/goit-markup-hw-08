@@ -1,6 +1,18 @@
 .worker {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #f5f4fa;
+    
+
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;}
+
+     @media screen and (min-width: 1200px) {
+             padding-top: 94px;
+            padding-bottom: 94px;
+                        }
+
 
     &__name {
             font-family: 'Roboto';
@@ -25,9 +37,12 @@
     &__liest {
             list-style: none;
             flex-basis: calc(100%);
-            display: flex;
             text-align: center;
             display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+
+           
                 }
         
     &__list {
@@ -36,10 +51,35 @@
             line-height: 1.19;
             letter-spacing: 0.03em;
             color: var(--title-text-color);
+            margin: 15px;
+            width: 450px;
+
+            @media screen and (min-width: 768px) {
+                    width: 354px;
+                    margin: 15px;
+                }
+            @media screen and (min-width: 1200px) {
+                    width: 270px;
+                    margin: 15px;
+                        }
+            
+
+
                 }
         
     &__foto:not(:first-child) {
-            margin-left: 30px;
+            margin-left: none;
+
+            @media screen and (min-width: 480px) {
+                    margin-left: none;
+                }
+
+            @media screen and (min-width: 768px) {
+                margin-left: none;
+                }
+             @media screen and (min-width: 1200px) {
+                margin-left: none;
+                }
                 }
         
     &__card {
@@ -89,3 +129,7 @@
     fill: #ffffff;
     background-color: #2196f3;
 }
+
+
+
+
