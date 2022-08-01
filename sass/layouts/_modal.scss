@@ -1,5 +1,5 @@
-.modal{
-&__imput {
+.modal {
+  &__imput {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -8,9 +8,9 @@
     padding-left: 42px;
     cursor: pointer;
     z-index: 100;
-}
+  }
 
-&__textarea {
+  &__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -27,8 +27,8 @@
     padding-left: 16px;
     padding-right: 16px;
     cursor: pointer;
-}
-&__icon-check {
+  }
+  &__icon-check {
     border-radius: 2px;
     width: 16px;
     height: 15px;
@@ -39,8 +39,8 @@
     outline: 1px solid #212121;
     outline-offset: -2px;
     transition: outline 250ms, background-color 250ms;
-}
-&__icon-check {
+  }
+  &__icon-check {
     border-radius: 2px;
     width: 16px;
     height: 15px;
@@ -51,19 +51,19 @@
     outline: 1px solid #212121;
     outline-offset: -2px;
     transition: outline 250ms, background-color 250ms;
-}
-&__check {
+  }
+  &__check {
     display: flex;
     margin-left: 12px;
     align-items: center;
     gap: 5px;
     margin-top: 20px;
-}
-&__chetbox-imput:checked+&__icon-check {
+  }
+  &__chetbox-imput:checked + &__icon-check {
     background-color: #2196f3;
     outline: 1px solid #2196f3;
-}
-&__visually-hidden {
+  }
+  &__visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -74,63 +74,63 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
-&__contract {
+  }
+  &__contract {
     color: #2196f3;
-}
-&__contract-text {
+  }
+  &__contract-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-}
-&__vector {
+  }
+  &__vector {
     position: absolute;
 
     left: 40px;
     transform: translate(100%, 100%);
-}
+  }
 
-&__register-name {
+  &__register-name {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 4px;
     width: 100%;
-}
-&__textarea::placeholder {
+  }
+  &__textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
-}
+  }
 
-&__imput:focus,
-&__textarea:focus {
+  &__imput:focus,
+  &__textarea:focus {
     outline: #2196f3;
     border: 1px solid #2196f3;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__imput:focus+svg {
+  &__imput:focus + svg {
     border-color: #2196f3;
 
     fill: #2196f3;
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__list-register {
+  &__list-register {
     margin-bottom: 10px;
-}
-&__register-form {
+  }
+  &__register-form {
     display: block;
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
     gap: 10px;
-}
+  }
 
-&__register-text {
+  &__register-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -141,18 +141,37 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+  }
 }
-}
-
 
 label {
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: #757575;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal {
+  position: absolute;
+  width: 450px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }

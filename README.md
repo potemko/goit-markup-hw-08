@@ -1,12 +1,23 @@
-# goit-markup-hw-01
-
-transition-property: background-color; transition-duration: 250ms; transition-timing-function:
-cubic-bezier(0.4, 0, 0.2, 1);
-
-.li-benefits { position: relative; overflow: hidden; }  
- text-transform: uppercase; color: #ffffff; } .benefits-overlay { position: absolute; bottom: 0%; left:
-0%; display: flex; align-items: center; justify-content: center; height: 70px; width: 370px; transform:
-translateY(100%); backdrop-filter: blur(3px); background-color: rgba(47, 48, 58, 0.8);
-
-transition-property: transform; transition-duration: 250ms; transition-timing-function:
-cubic-bezier(0.4, 0, 0.2, 1); } .li-benefits:hover .benefits-overlay { transform: translateY(0);
+<picture>
+                  <source
+                    media="(min-width: 1200px )"
+                    srcset="./images/main/img1-a.jpg 1x, ./images/main/img1-a@2.jpg x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="./images/main/img1-b.jpg 1x, ./images/main/img1-b@2.jpg x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="./images/main/img1-c.jpg 1x, ./images/main/img1-c@2.jpg x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="card-portfolio__logo-work"
+                    src="./images/main/img1-a.jpg"
+                    alt="ноутбук"
+                    width="100%"
+                  />
+                </picture>

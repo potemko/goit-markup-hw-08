@@ -1,30 +1,19 @@
 .companu-logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    display: block;
-    margin-left: 0px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  display: block;
+  margin-left: 0px;
 
-    &__span {
-            color: var(--title-text-color);
-        }
-}
-
-.footer-location__logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    display: block;
+  &__span {
+    color: var(--title-text-color);
+  }
 }
 
 .logo-footer__img {
-    color: var(--white-text-color);
+  color: var(--white-text-color);
 }
