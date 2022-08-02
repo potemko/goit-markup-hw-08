@@ -32,6 +32,11 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer-location__street:hover,
@@ -79,10 +84,9 @@
 
 .footer-font {
   display: flex;
-
+  margin-top: 60px;
   flex-direction: column;
   //   margin-left: 93px;
-  margin-top: 60px;
 
   @media screen and (min-width: 768px) {
     margin-left: auto;
@@ -193,8 +197,16 @@
   align-items: baseline;
   flex-direction: column;
 
+  @media screen and (max-width: 480px) {
+    align-content: center;
+  }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

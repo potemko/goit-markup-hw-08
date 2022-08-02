@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .studio__main-item {
@@ -13,7 +18,7 @@
 }
 
 .info-logo-liest {
-  width: 450px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

@@ -159,7 +159,7 @@ label {
 .modal {
   position: absolute;
   width: 450px;
-  height: 581px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -169,9 +169,12 @@ label {
   border-radius: 4px;
 
   @media screen and (min-width: 768px) {
-    width: 528px;
+    width: 450px;
+    height: 609px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
+    height: 581px;
   }
 }

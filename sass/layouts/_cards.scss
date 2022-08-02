@@ -1,116 +1,110 @@
 .card-portfolio__aside {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;}
-
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
 
 .card-portfolio__list-aside {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .card-portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;}
-
-.card-portfolio__item {
-     margin: 15px;
-    widows: 450px;
-@media screen and (min-width: 768px) {
-        margin: 15px;
-        width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin: 15px;
-            width: 370px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
+.card-portfolio__item {
+  margin: 15px;
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: 354px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: 370px;
+  }
+}
 
 .card-portfolio__item:focus,
 .card-portfolio__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .card-portfolio__description {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding-left: 20px;
 }
 
 .card-portfolio__desc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.card-portfolio__logo-work{
-    @media screen and (min-width: 768px) {
-            
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            
-            width: 370px;
-        }
+.card-portfolio__logo-work {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .card-portfolio__overlay {
-    position: absolute;
-    bottom: 0%;
+  position: absolute;
+  bottom: 0%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    backdrop-filter: blur(3px);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  backdrop-filter: blur(3px);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-portfolio__picture {
-    position: relative;
-    overflow: hidden;
-    width: 450px;
-    @media screen and (min-width: 768px) {
-    
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-    
-            width: 370px;
-        }
+  position: relative;
+  overflow: hidden;
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .card-portfolio__picture:hover .card-portfolio__overlay {
-    transform: translateY(0%);
+  transform: translateY(0%);
 }

@@ -31,12 +31,51 @@
             >Web<span class="companu-logo__span">Studio </span>
           </a>
           <!-- список навігації-->
-          <button class="mobile-menu-btn" type="button">
+          <button class="mobile-menu-btn" type="button " data-menu-button>
             <svg class="mobile-menu-icon" width="24" height="16">
               <use class="mobile-menu-burger" href="./symbol-defs.svg#icon-menu_burger"></use>
               <use class="mobile-menu-close" href="./symbol-defs.svg#icon-close_burger"></use>
             </svg>
           </button>
+          <div class="mobil-menu" data-menu>
+            <ul class="mobil-menu__nav list-style">
+              <li class="mobil-menu__nav-item link">
+                <a class="link header-nav__item--current mobil-menu-style" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobil-menu__nav-item link">
+                <a class="link header-nav__item--current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobil-menu__nav-item link">
+                <a class="link mobil-menu-style" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobil-menu__contact list-style">
+              <li class="mobil-menu__contact-item">
+                <a class="link header-nav__item--current mobil-menu__number" href=""
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobil-menu__contact-item">
+                <a class="link mobil-menu-style mobil-menu__mail" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobil-menu__socials list-style">
+              <li class="mobil-menu__socials-item">
+                <a class="link header-nav__item--current" href="">Instagram</a>
+              </li>
+              <li class="mobil-menu__socials-item">
+                <a class="link header-nav__item--current" href="">Instagram</a>
+              </li>
+              <li class="mobil-menu__socials-item">
+                <a class="link header-nav__item--current" href="">Facebook</a>
+              </li>
+              <li class="mobil-menu__socials-item">
+                <a class="link header-nav__item--current" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-link" href="./index.html">Студия</a>
@@ -114,7 +153,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img1-a.jpg 1x, ./images/main/img1-a@2.jpg x"
+                    srcset="./images/main/img1-c.jpg 1x, ./images/main/img1-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -124,14 +163,15 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img1-c.jpg 1x, ./images/main/img1-c@2.jpg x"
+                    srcset="./images/main/img1-a.jpg 1x, ./images/main/img1-a@2.jpg x"
                     type="image/jpg"
                   />
                   <img
                     class="card-portfolio__logo-work"
                     src="./images/main/img1-a.jpg"
                     alt="ноутбук"
-                    width="100%"
+                    width="450"
+                    height="294"
                   />
                 </picture>
 
@@ -153,7 +193,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img2-a.jpg 1x, ./images/main/img2-a@2.jpg x"
+                    srcset="./images/main/img2-c.jpg 1x, ./images/main/img2-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -163,10 +203,15 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img2-c.jpg 1x, ./images/main/img2-c@2.jpg x"
+                    srcset="./images/main/img2-a.jpg 1x, ./images/main/img2-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img2-a.jpg" alt="баскетболісти" width="100%" />
+                  <img
+                    src="./images/main/img2-a.jpg"
+                    alt="баскетболісти"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -187,7 +232,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img3-a.jpg 1x, ./images/main/img3-a@2.jpg x"
+                    srcset="./images/main/img3-c.jpg 1x, ./images/main/img3-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -197,10 +242,15 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img3-c.jpg 1x, ./images/main/img3-c@2.jpg x"
+                    srcset="./images/main/img3-a.jpg 1x, ./images/main/img3-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img3-a.jpg" alt="логотип з рибою" width="100%" />
+                  <img
+                    src="./images/main/img3-a.jpg"
+                    alt="логотип з рибою"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -221,7 +271,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img4-a.jpg 1x, ./images/main/img4-a@2.jpg x"
+                    srcset="./images/main/img4-c.jpg 1x, ./images/main/img4-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -231,10 +281,10 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img4-c.jpg 1x, ./images/main/img4-c@2.jpg x"
+                    srcset="./images/main/img4-a.jpg 1x, ./images/main/img4-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img4-a.jpg" alt="наушники" width="100%" />
+                  <img src="./images/main/img4-a.jpg" alt="наушники" width="450" height="294" />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -255,7 +305,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img5-a.jpg 1x, ./images/main/img5-a@2.jpg x"
+                    srcset="./images/main/img5-c.jpg 1x, ./images/main/img5-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -265,10 +315,10 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img5-c.jpg 1x, ./images/main/img5-c@2.jpg x"
+                    srcset="./images/main/img5-a.jpg 1x, ./images/main/img5-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img5.jpg" alt="два бокса" width="100%" />
+                  <img src="./images/main/img5.jpg" alt="два бокса" width="450" height="294" />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -289,7 +339,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img6-a.jpg 1x, ./images/main/img6-a@2.jpg x"
+                    srcset="./images/main/img6-c.jpg 1x, ./images/main/img6-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -299,10 +349,10 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img6-c.jpg 1x, ./images/main/img6-c@2.jpg x"
+                    srcset="./images/main/img6-a.jpg 1x, ./images/main/img6-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img6-a.jpg" alt="монітор" width="100%" />
+                  <img src="./images/main/img6-a.jpg" alt="монітор" width="450" height="294" />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -323,7 +373,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img7-a.jpg 1x, ./images/main/img7-a@2.jpg x"
+                    srcset="./images/main/img7-c.jpg 1x, ./images/main/img7-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -333,10 +383,10 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img7-c.jpg 1x, ./images/main/img7-c@2.jpg x"
+                    srcset="./images/main/img7-a.jpg 1x, ./images/main/img7-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img7-a.jpg" alt="журнал" width="100%" />
+                  <img src="./images/main/img7-a.jpg" alt="журнал" width="450" height="294" />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -357,7 +407,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img8-a.jpg 1x, ./images/main/img8-a@2.jpg x"
+                    srcset="./images/main/img8-c.jpg 1x, ./images/main/img8-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -367,10 +417,10 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img8-c.jpg 1x, ./images/main/img8-c@2.jpg x"
+                    srcset="./images/main/img8-a.jpg 1x, ./images/main/img8-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img8-a.jpg" alt="бірка" width="100%" />
+                  <img src="./images/main/img8-a.jpg" alt="бірка" width="450" height="294" />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -391,7 +441,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px )"
-                    srcset="./images/main/img9-a.jpg 1x, ./images/main/img9-a@2.jpg x"
+                    srcset="./images/main/img9-c.jpg 1x, ./images/main/img9-c@2.jpg x"
                     type="image/jpg"
                   />
                   <source
@@ -401,10 +451,15 @@
                   />
                   <source
                     media="(max-width: 767px )"
-                    srcset="./images/main/img9-c.jpg 1x, ./images/main/img9-c@2.jpg x"
+                    srcset="./images/main/img9-a.jpg 1x, ./images/main/img9-a@2.jpg x"
                     type="image/jpg"
                   />
-                  <img src="./images/main/img9-a.jpg" alt="робота за ноутбуком" width="100%" />
+                  <img
+                    src="./images/main/img9-a.jpg"
+                    alt="робота за ноутбуком"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
 
                 <div class="card-portfolio__overlay">
@@ -539,5 +594,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

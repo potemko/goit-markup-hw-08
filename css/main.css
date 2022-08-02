@@ -69,6 +69,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -102,17 +103,17 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 .section {
@@ -518,7 +519,7 @@ ul {
 
 .card-portfolio__item {
   margin: 15px;
-  widows: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card-portfolio__item {
@@ -614,7 +615,7 @@ ul {
 .card-portfolio__picture {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card-portfolio__picture {
@@ -828,7 +829,7 @@ label {
 .modal {
   position: absolute;
   width: 450px;
-  height: 581px;
+  height: 609px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -840,12 +841,14 @@ label {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 528px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
   }
 }
 
@@ -909,6 +912,12 @@ label {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer-location__street:hover,
@@ -974,11 +983,11 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-font {
@@ -1127,12 +1136,24 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .all-footer {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .all-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .all-footer {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -1183,8 +1204,8 @@ label {
 
 .container-hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1195,6 +1216,12 @@ label {
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/fon/Header-a.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/Header-a.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .container-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .container-hero .box {
@@ -1225,12 +1252,18 @@ label {
 }
 .container-hero__main-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .container-hero__main-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .worker {
@@ -1261,12 +1294,19 @@ label {
 }
 .worker__team {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .worker__team {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+  }
 }
 .worker__liest {
   list-style: none;
@@ -1386,6 +1426,12 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .studio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .studio__main-item {
   display: -webkit-box;
@@ -1399,7 +1445,7 @@ label {
 }
 
 .info-logo-liest {
-  width: 450px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1612,6 +1658,12 @@ label {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .footer-location__street:hover,
 .footer-location__street:focus {
@@ -1676,11 +1728,11 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-font {
@@ -1829,12 +1881,24 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .all-footer {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .all-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .all-footer {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -1903,12 +1967,19 @@ label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .customer__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 .customer__grup-logo {
   display: -webkit-box;
